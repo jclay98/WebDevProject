@@ -1,0 +1,186 @@
+<!--Jenine Clay, jclay@andrew.cmu.edu, Web Development Project 67-250-->
+<!--special.html-->
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Jenine Clay">
+	<!-- Date Designed: 4/3/2017-->
+	<meta name="keywords" content="prantl's, almond torte, cupcake, wedding,pittsburgh, bakery">
+	<meta name="description" content="Prantl's Bakery Website">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/stylePB.css">
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/scriptsPB.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	<script>
+		$(function() {
+			$(".tabs").tabs();
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#gallery a').lightBox(;)
+		});
+	</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="toprow">
+			<header>
+				<a href="home.html"><img src="images/prantlslogo.png" alt="Photo"></a>
+				<h1>Prantl's Bakery</h1>
+			</header>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="stores.html">Stores</a>
+				<a href="special.html" class="selected">Special</a>
+				<a href="data.html">Data</a>
+			</nav>
+			<!-- Closes menuBar -->
+		</div>
+		<!-- Closes toprow -->
+
+		<div id="content">
+			<div id="BATC">
+				<h2>Burnt Almond Torte</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allowfullscreen></iframe>
+				<h3>Huffington Post Feature</h3>
+				<p>“No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing burnt almond torte. It is possibly the BEST cake America has to offer.”</p>
+				<a href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">Article!</a>
+			</div>
+			
+			<div id="wedding">
+				<h2>Weddings</h2>
+				<p>Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from.</p>
+
+				<div class="tabs">
+					<ul>
+						<li><a href="#tabs-1">Batters and fillings</a></li>
+						<li><a href="#tabs-2">Sizes</a></li>
+						<li><a href="#tabs-3">Pricing</a></li>
+						<li><a href="#tabs-4">Other delicacies</a></li>
+						<li><a href="#tabs-5">Delivery</a></li>
+					</ul>
+
+					<div id="tabs-1">
+						<p>Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+					</div>
+
+					<div id="tabs-2">
+						<p>To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+					</div>
+
+					<div id="tabs-3">
+						<p>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range.</p>
+					</div>
+
+					<div id="tabs-4">
+						<p>Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+
+					</div>
+
+					<div id="tabs-5">
+						<p>We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+					</div>
+
+				</div>
+				<!-- Closes tabs -->
+			</div>
+			<!-- Closes weddings -->
+
+			<div id="celebrations">
+				<h2>Celebrations</h2>
+				<p>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com. </p>
+				
+				<div class="tabs">
+					<ul>
+						<li><a href="#tabs-1">Sizes</a></li>
+						<li><a href="#tabs-2">Pricing</a></li>
+						<li><a href="#tabs-3">Delivery</a></li>
+					</ul>
+
+					<div id="tabs-1">
+						<p>We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full.</p>
+					</div>
+
+					<div id="tabs-2">
+						<p>Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.</p>
+					</div>
+
+					<div id="tabs-3">
+						<p>Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+					</div>
+
+				</div>
+				<!-- Closes tabs -->
+
+			</div>
+			<!-- Closes celebrations -->
+
+			<div id="content-gallery">
+				<p>Click on the thumbnail to see full image. </p> 
+				<div id="gallery">
+					<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/gradcake.jpg" title="Graduation Cake">
+					<img src="images/gradcakethumb.jpeg" alt="image1"></a></div></div>
+					<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/creamdonut.jpg" title="Cream-filled Donuts">
+					<img src="images/creamdonutthumb.jpeg" alt="donut"></a></div></div>
+					<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/rainbowcupcake.jpg" title="Rainbow Cupcakes">
+					<img src="images/rainbowcupcakethumb.jpeg" alt="cupcake"></a></div></div>
+					<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/2017cookies.jpg" title="Happy New Year Cookies">
+					<img src="images/2017cookiesthumb.jpeg" alt="cookies"></a></div></div>
+					<div id="galleryThumbnail"><div id="thmbnlShadow">
+					<a href="images/wedtortcake.jpg" title="Almond Garnished Wedding Cake">
+					<img src="images/wedtortcakethumb.jpeg" alt="wedding cake"></a></div></div>
+				</div>
+				<!-- Gallery images source: https://www.facebook.com/pg/PrantlsBakery/photos/?ref=page_internal -->
+				<!-- Closes gallery -->
+			</div>
+			<!-- Closes content-gallery -->
+
+
+		</div>
+		<!-- Closes content-->
+
+		<div id="sidebar">
+			<h4>Connect!</h4>
+			<a href="https://www.pinterest.com/prantlsbakery/" target="_blank"><img src="images/pinterest.png" alt="Photo"></a><br>
+			<a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/facebook.png" alt="Photo"></a><br>
+			<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png" alt="Photo"></a><br>
+			<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png" alt="Photo"></a><br>
+			<a href="mailto:infoneeded@prantlsbakery.com"><img src="images/mail.png"></a><br>
+			<!-- Social Media Buttons http://webcache.googleusercontent.com/search?q=cache:http://www.greatfun4kidsblog.com/2011/09/blog-tips-your-own-social-media-buttons.html-->
+
+		</div>
+		<!-- Closes sidebar -->
+
+		<footer>
+			<p>&copy; Prantl's Bakery est. 1948</p>
+			<a href="contactPB.html">Contact Us</a>
+			<a href="stores.html">Find Us</a>
+		</footer>
+
+	</div>
+	<!-- Closes container -->
+
+</body>
+</html>

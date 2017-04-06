@@ -1,0 +1,246 @@
+<!--Jenine Clay, jclay@andrew.cmu.edu, Web Development Project 67-250-->
+<!--stores.html-->
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Jenine Clay">
+    <!-- Date Designed: 4/3/2017-->
+	<meta name="keywords" content="prantl's, almond torte, cupcake, wedding,pittsburgh, bakery">
+	<meta name="description" content="Prantl's Bakery Website">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/stylePB.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="jquery.lightbox.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/scriptsPB.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	<script>
+		$(function() {
+			$(".accordion").accordion();
+		});
+	</script>
+
+    <script type="text/javascript">
+        //Store 1 Shadyside
+        $(function()  {
+            $('#container-graph1').highcharts({
+                title: {
+                text: 'Popular Times'
+                },
+
+                subtitle: {
+                    text: 'For Shadyside'
+                },
+
+                xAxis: {
+                    title: {
+                        text: 'Hours'
+                    }
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'Avg Number of People'
+                    }
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    series: {
+                        pointStart: 7
+                    }
+                },
+
+                series: [{
+                    name: 'Shadyside',
+                    data:  [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                
+                }]
+            });
+        });
+    </script>   
+    <!-- http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/line-basic/-->
+
+
+    <script type="text/javascript">
+        //Store 2 Downtown
+        $(function()  {
+            $('#container-graph2').highcharts({
+                title: {
+                text: 'Popular Times'
+                },
+
+                subtitle: {
+                    text: 'For Downtown'
+                },
+
+                xAxis: {
+                    title: {
+                        text: 'Hours'
+                    }
+                },
+
+                yAxis: {
+                    title: {
+                        text: 'Avg Number of People'
+                    }
+                },
+
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle'
+                },
+
+                plotOptions: {
+                    series: {
+                        pointStart: 7
+                    }
+                },
+
+                series: [{
+                    name: 'Downtown',
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                
+                }]
+            });
+        });
+    </script>   
+    <!-- http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/line-basic/-->
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="toprow">
+			<header>
+				<a href="home.html"><img src="images/prantlslogo.png" alt="Photo"></a>
+				<h1>Prantl's Bakery</h1>
+			</header>
+
+			<nav>
+				<a href="home.html">Home</a>
+				<a href="stores.html" class="selected">Stores</a>
+                <a href="special.html">Special</a>
+				<a href="data.html">Data</a>
+			</nav>
+			<!-- Closes menuBar -->
+		</div>
+		<!-- Closes toprow -->
+		<div id="content">
+
+			<div id="stores">
+                <table>
+                    <tr>
+                        <th colspan="2">Prantl's Stores</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Store 1</p>
+                            <!-- Shadyside-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48580.87382438599!2d-80.00251719441277!3d40.44639446644357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1490680138562" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            
+                            <div class="accordion">
+                                <h4>Store Info</h4>
+                                    <div><p>
+                                        5525 Walnut Street<br>
+                                        Pittsburgh, PA 15232<br>
+                                        Phone number: 412-621-2092<br>
+                                        Email: info@prantlsbakery.com<br>
+                                    </p></div>
+                                <h4>Hours of Operation</h4>
+                                    <div>
+                                        <ul>
+                                            <li>Monday: 9am – 4pm</li>
+                                            <li>Tuesday – Saturday: 7:30am – 6pm</li>
+                                            <li>Sunday: 9am – 4pm</li>
+                                        </ul>
+                                        <p>**Special Holiday Hours</p>
+                                    </div>
+                            </div>
+                        <!-- Closes accordion -->
+
+                            <div id="container-graph1" style="height: 400px"></div>
+                            
+                        <!-- Closes store1-->
+                        </td>
+
+                        <td>
+                            <p>Store 2</p>
+                            <!-- Downtown-->
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48580.873824385984!2d-80.00251719441277!3d40.44639446644358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1490680393207" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            
+                            <div class="accordion">
+                                <h4>Store Info</h4>
+                                    <div><p>
+                                        438 Market Street<br>
+                                        Pittsburgh, PA 15222<br>
+                                        General Information: 412-471-6861<br>
+                                        Email: infoms@prantlsbakery.com<br>
+                                    </p></div>
+                                <h4>Hours of Operation</h4>
+                                    <div>
+                                        <ul>
+                                            <li>Monday – Friday: 7am – 6pm</li>
+                                            <li>Saturday: 9am – 4pm</li>
+                                            <li>Sunday: 10am – 3pm</li>
+                                        </ul>
+                                        <p>**Special Holiday Hours</p>
+                                    </div>
+                            </div>
+                            <!-- Closes accordion -->
+
+                            <div id="container-graph2"></div>
+                            
+                            </td>
+                        </tr>
+				
+			
+                </table>
+
+			</div>
+			<!-- Closes stores-->
+
+		</div>
+		<!-- CLoses content-->
+
+		<div id="sidebar">
+			<h4>Connect!</h4>
+			<a href="https://www.pinterest.com/prantlsbakery/" target="_blank"><img src="images/pinterest.png" alt="Photo"></a><br>
+			<a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/facebook.png" alt="Photo"></a><br>
+			<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png" alt="Photo"></a><br>
+			<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png" alt="Photo"></a><br>
+            <a href="mailto:infoneeded@prantlsbakery.com"><img src="images/mail.png"></a><br>
+			<!-- Social Media Buttons http://webcache.googleusercontent.com/search?q=cache:http://www.greatfun4kidsblog.com/2011/09/blog-tips-your-own-social-media-buttons.html-->
+
+		</div>
+		<!-- Closes sidebar -->
+
+		<footer>
+			<p>&copy; Prantl's Bakery est. 1948</p>
+			<a href="contactPB.html">Contact Us</a>
+			<a href="stores.html">Find Us</a>
+		</footer>
+		<!-- Closes footer -->
+
+	</div>
+	<!-- Closes container -->
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!--Jenine Clay, jclay@andrew.cmu.edu, Web Development Project 67-250-->
+<!--data.html-->
+
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="author" content="Jenine Clay">
+	<!-- Date Designed: 4/3/2017-->
+	<meta name="keywords" content="prantl's, almond torte, cupcake, wedding,pittsburgh, bakery">
+	<meta name="description" content="Prantl's Bakery Website">
+
+	<title>Prantl's Bakery</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/stylePB.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="js/scriptsPB.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function () {
+
+	    // Build the chart
+	    Highcharts.chart('container-graph1', {
+	        chart: {
+	            plotBackgroundColor: null,
+	            plotBorderWidth: null,
+	            plotShadow: false,
+	            type: 'pie'
+	        },
+	        title: {
+	            text: "Prantl's Most Popular Items"
+	        },
+	        tooltip: {
+	            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	        },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: false
+	                },
+	                showInLegend: true
+	            }
+	        },
+	        series: [{
+	            name: 'Items',
+	            colorByPoint: true,
+	            data: [{
+	                name: 'Burnt Almond Torte Cake',
+	                y: 44.84
+	            }, {
+	                name: 'Cookies and Cream Cup',
+	                y: 20.56,
+	                sliced: true,
+	                selected: true
+	            }, {
+	                name: 'Cheese Danish',
+	                y: 12.60
+	            }, {
+	                name: 'Coconut Crueller',
+	                y: 10.36
+	            }, {
+	                name: 'Holiday Star Cookie',
+	                y: 6.84
+	            }, {
+	                name: 'Caramel Apple Nut Pie',
+	                y: 4.80
+	            }]
+	        }]
+	    });
+	});
+	</script>
+	<!--http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/pie-legend/-->
+
+	<script type="text/javascript">
+		//Store 2 Downtown
+        $(function()  {
+            $('#container-graph2').highcharts({
+            //Highcharts.chart('#container-graph2', {
+		//var chart = Highcharts.chart('container-graph2', {
+            chart{ 
+            title: {
+                text: 'Chart.update'
+            },
+
+            subtitle: {
+                text: 'Plain'
+            },
+
+            xAxis: {
+                categories: ['7 am', '8 am', '9 am', '10 am', '11 am', '12 pm', '1 pm', '2 pm', '3 pm', '4 pm', '5 pm']
+            },
+
+            series: [{
+                type: 'column',
+                colorByPoint: true,
+                data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32],
+                showInLegend: false
+            }]
+
+        });
+
+
+        
+
+	</script>	
+
+	<script type="text/javascript">
+		$(function()  {
+			$('#container-graph2').highcharts({
+			//Highcharts.chart('#container-graph2', {
+		    chart: {
+		        type: 'pie',
+		        options3d: {
+		            enabled: true,
+		            alpha: 45
+		        }
+		    },
+		    title: {
+		        text: 'Contents of Highsoft\'s weekly fruit delivery'
+		    },
+		    subtitle: {
+		        text: '3D donut in Highcharts'
+		    },
+		    plotOptions: {
+		        pie: {
+		            innerSize: 100,
+		            depth: 45
+		        }
+		    },
+		    series: [{
+		        name: 'Prantl\'s Least Popular Items',
+		        data: [
+		            ['Burnt Almond Torte Cake', 8],
+		            ['Cookies and Cream Cup', 3],
+		            ['Cheese Danish', 1],
+		            ['White Chocolate Rasberry Cup', 6],
+		            ['Sugar Donut', 8],
+		            ['Mapel Nut Coffee Cake', 4]
+		        ]
+		    }]
+		});
+	</script>
+	<!--http://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/3d-pie-donut/-->
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="toprow">
+			<header>
+				<a href="home.html"><img src="images/prantlslogo.png" alt="Photo"></a>
+				<h1>Prantl's Bakery</h1>
+			</header>
+
+			<div id="menuBar">
+				<nav>
+					<a href="home.html" class="selected">Home</a>
+					<a href="stores.html">Stores</a>
+					<a href="special.html">Special</a>
+					<a href="data.html">Data</a>
+				</nav>
+			</div>
+			<!-- Closes menuBar -->
+		</div>
+		<!-- Closes toprow -->
+
+		<div id="content">
+			<h4>Later in development, this page will be for internal store use only, and protected by a password</h4>
+			<div id="container-graph1"></div>
+			<br>
+			<div id="container-graph2"></div>
+		</div>
+			<!-- Closes content -->
+
+		<div id="sidebar">
+			<h4>Connect!</h4>
+			<a href="https://www.pinterest.com/prantlsbakery/" target="_blank"><img src="images/pinterest.png" alt="Photo"></a><br>
+			<a href="https://www.facebook.com/PrantlsBakery/" target="_blank"><img src="images/facebook.png" alt="Photo"></a><br>
+			<a href="https://www.instagram.com/prantls_bakery/" target="_blank"><img src="images/instagram.png" alt="Photo"></a><br>
+			<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png" alt="Photo"></a><br>
+			<a href="mailto:infoneeded@prantlsbakery.com"><img src="images/mail.png"></a><br>
+			<!-- Social Media Buttons http://webcache.googleusercontent.com/search?q=cache:http://www.greatfun4kidsblog.com/2011/09/blog-tips-your-own-social-media-buttons.html-->
+
+		</div>
+		<!-- Closes sidebar -->
+
+		<footer>
+			<p>&copy; Prantl's Bakery est. 1948</p>
+			<a href="contactPB.html">Contact Us</a>
+			<a href="stores.html">Find Us</a>
+		</footer>
+		<!-- Closes footer -->
+
+	</div>
+	<!-- Closes container -->
+
+</body>
+</html>

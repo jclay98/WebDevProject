@@ -1,0 +1,281 @@
+/*Jenine Clay, jclay@andrew.cmu.edu, Web Development Project*/
+/*CSS Document*/
+/* color theme : #00a665, #FFFAF0, #9dfb9d */
+
+body {
+	font-family: "Roboto", Roboto;
+	font-size: 100%;
+	line-height: 1.7em;
+	color: #000000;
+	background-image: url("almondtorte.jpg");
+	/*This pattern is downloaded from www.subtlepatterns.com.  If you need more, that's where to get'em.*/
+}
+
+a {
+			color: #00a665;
+			text-decoration: none;
+}
+
+a.hover {
+			color: #00a665;
+			text-decoration: underline;
+}
+
+
+#container {
+			width: 75%;
+			margin: 10px auto;
+			background-color: #FFFAF0;
+			padding: 2em;
+			border: 20px solid #9dfb9d;
+}
+
+
+
+#toprow {
+			/*border-bottom: 1px dotted #ccc;*/
+			padding: .5em, .5em, 3em, .5em;
+}
+
+#toprow img {
+			float: left;
+			margin: 1em;
+			padding-bottom: 15em;
+}
+
+
+#toprow header {
+			margin-bottom: -2.5em;
+			padding-top: 0.1em;
+}
+
+#toprow h1{
+			color: #00a665;
+			font-size: 3.75em;
+			letter-spacing: -2px;
+}
+
+#toprow nav{
+			float: right;
+}
+
+#toprow nav a{
+			text-decoration: none;
+			font-size: 1.125em;
+			font-weight: 400;
+			padding: 15px; 
+			color: #000000;
+}
+
+#toprow nav a.selected:hover {
+			background: #9dfb9d;
+			color: #bbbbbb;
+}
+
+#toprow nav a:hover{
+			background: #9dfb9d;
+			color: #00a665;
+}
+
+#sidebar {
+	float: left;
+	width: 15%;
+}
+
+#sidebar img {
+			width: 22%;
+			height: 22%;
+}
+
+#content {
+			float: right;
+			width: 75%;
+			margin: 0;
+			margin-top: 20px;
+			padding: 1em;
+			border-right: 1px dotted #ffffff;
+}
+
+
+#homecontent h3 {
+			font-family: Roboto;
+			font-size: 1.5em;
+			margin: 30px 0 10px 0;
+			font-weight: normal;
+}
+
+#content h3 {
+			font-family: Roboto;
+			font-size: 1.5em;
+			margin: 30px 0 10px 0;
+			font-weight: normal;
+			text-align: center;
+
+}
+
+
+#content h4{
+			font-family: Roboto;
+			font-size: 1.25em;
+			margin: 30px 0 10px 0;
+			font-weight: normal;
+			text-align: center;
+}
+
+
+
+#content img {
+			float: left;
+			margin: 1em;
+			width: 15%;
+			height: 20%;
+}
+
+#bio {
+			float: right;
+			margin-left: 3em;
+			font-size: 0.875em;
+			width: 74%;
+			border-left: 
+}
+
+
+#biotable img {
+			float: left;
+			margin: 1em;
+			width: 108%;
+			height: 58%;
+			/*clear: bottom;*/
+}
+
+#bio p {
+			overflow: hidden;
+}
+
+#bio a {
+			text-decoration: underline;
+			border-bottom: 1px dotted #ffffff;
+			color: #000;
+}
+
+#bio a:hover {
+			color: #00a665;
+
+}
+
+#bio a:link {
+			text-decoration: underline;
+}
+
+.selected {
+	background: #f6f6f6;
+}
+
+
+#content a:hover{
+			color: #00a665;
+}
+
+
+#biotable {
+			float: left;
+			width: 20%;
+			border-color: #FFFAF0;
+			background-color: #FFFAF0;
+}
+
+.biotd {
+			border: 1px solid #FFFAF0;
+			padding: 2px
+}
+
+
+
+
+table {
+			padding: 3em;
+			width: 90%;
+			margin: auto;
+			border-spacing: 3px;
+			border: 3px solid #ffffff;
+			border-collapse: collapse;
+			border-color: #9dfb9d;
+			text-align: center;
+			background-color: #ffffff;
+}
+
+th, td {
+			border: 1px solid #9dfb9d;
+			padding: 2px
+}
+
+th {
+			height: 60px;
+			font-weight: bold;
+}
+	
+form {
+			width: 75%;
+			margin: auto;
+			border: 1px solid ;
+			padding: 10px;
+			background: #ffffff;
+}
+
+legend {
+			font-weight: bold;
+			color: #666666;
+			text-align: center;
+			border-bottom: 5px;
+}
+
+label {
+			font-weight: bold;
+			text-align: center;
+}
+
+#bar {
+			height: 20%;
+}
+
+#bar img {
+			width: 60%;
+			height: 60%;
+}
+
+footer {
+			clear: both;
+			margin: 0;
+			padding: 0.5em;
+			color: #333333;
+			font-variant: small-caps;
+			font size: 0.813em;
+			text-align: center;
+			border-top: 1px dotted #9dfb9d;
+			background-color: #ddd;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+iframe {
+	display: block;
+	margin: auto;
+	width: 75%;
+}
+
+
+#accordion {
+	color: #00a665;
+}
+
+#tabs {
+	color: #00a665;
+}
+
+
+
+
+
+
